@@ -1,8 +1,8 @@
 #!/bin/bash
 
-POOL=asia1-etc.ethermine.org:4444
+POOL=asia1-etc.ethermine.org:5555
 WALLET=0xf339db86fafc99f85619a0d55e2d1e47ef9a840a
-WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
+WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-lol
 
 cd "$(dirname "$0")"
 
