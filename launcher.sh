@@ -6,4 +6,4 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-lol
 
 cd "$(dirname "$0")"
 
-chmod +x ./lolMiner && ./lolMiner --algo ETCHASH --pool $POOL --user $WALLET.$WORKER $@
+chmod +x ./lolMiner && ./lolMiner --algo ETCHASH --pool $POOL --user $WALLET.$WORKER --tls 1 $@
